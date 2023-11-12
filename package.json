@@ -27,8 +27,7 @@
     "react-select": "^5.8.0",
     "sass": "^1.69.5",
     "stylelint-config-prettier-scss": "^1.0.0",
-    "stylelint-prettier": "^4.0.2",
-    "zustand": "^4.4.6"
+    "stylelint-prettier": "^4.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.34",
