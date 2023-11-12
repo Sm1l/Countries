@@ -1,5 +1,11 @@
 import React, { createContext, useState } from "react";
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import {
+  Route,
+  RouterProvider,
+  // createBrowserRouter,
+  createRoutesFromElements,
+  createHashRouter,
+} from "react-router-dom";
 import styles from "./App.module.scss";
 import { HomePage } from "./Pages/HomePage";
 import { Layout } from "./Pages/Layout";
@@ -7,7 +13,8 @@ import { NotFoundPage } from "./Pages/NotFoundPage";
 import { SingleCountryPage } from "./Pages/SingleCountryPage";
 import { TAllCountriesMini } from "./Types/types";
 
-const router = createBrowserRouter(
+// const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<HomePage />} />
