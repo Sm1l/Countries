@@ -1,0 +1,18 @@
+.singleCountryPage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1440px;
+}
+
+.singleCountryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+}

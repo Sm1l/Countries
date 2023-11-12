@@ -1,0 +1,30 @@
+.cardContainer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  width: 100%;
+  max-width: 1440px;
+
+  background-color: var(--colorBg);
+}
+
+@media (min-width: 480px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+}

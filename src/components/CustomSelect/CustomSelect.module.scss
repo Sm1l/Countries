@@ -1,0 +1,20 @@
+.customSelect {
+  width: 250px;
+
+  font-family: inherit;
+
+  border: none;
+  border-radius: var(--radius);
+
+  & * {
+    color: var(--colorText) !important;
+
+    background-color: var(--colorElements);
+  }
+
+  & > div[id] {
+    background-color: var(--colorElements);
+
+    box-shadow: var(--shadow);
+  }
+}

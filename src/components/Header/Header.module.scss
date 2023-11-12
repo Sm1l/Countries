@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: var(--shadow);
+}
+
+.headerContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1460px;
+  padding: 10px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.text {
+  text-transform: capitalize;
+}
+
+@media (min-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}

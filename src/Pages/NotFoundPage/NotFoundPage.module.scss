@@ -1,0 +1,15 @@
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+
+  padding: 10px 40px;
+
+  border: 1px solid var(--colorText);
+  border-radius: 10px;
+}

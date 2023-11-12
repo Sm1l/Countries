@@ -1,0 +1,17 @@
+:root {
+  --radius: 5px;
+
+  body[data-theme="light"] {
+    --colorText: #111517;
+    --colorBg: #fafafa;
+    --colorElements: #ffffff;
+    --shadow: 0px 8px 24px 0px rgb(149 157 165 / 20%);
+  }
+
+  body[data-theme="dark"] {
+    --colorText: #ffffff;
+    --colorBg: #202c37;
+    --colorElements: #2b3945;
+    --shadow: 0px 8px 8px 0px rgb(245 245 245 / 20%);
+  }
+}

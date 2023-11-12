@@ -1,0 +1,25 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media (min-width: 768px) {
+  .controlsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
