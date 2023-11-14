@@ -7,6 +7,7 @@ import { searchByCountry } from "../../api/api";
 import { Button } from "../../components/Button";
 import { TSingleCountry } from "../../Types/types";
 import { CounrtyInfo } from "../../components/CounrtyInfo";
+import { ScrollRestoration } from "react-router-dom";
 
 interface SingleCountryPageProps {}
 
@@ -41,6 +42,7 @@ const SingleCountryPage: React.FC<SingleCountryPageProps> = () => {
           Back
         </Button>
         {country && <CounrtyInfo country={country} navigate={navigate} />}
+        <ScrollRestoration />
       </div>
     </div>
   );

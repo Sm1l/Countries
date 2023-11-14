@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./NotFoundPage.module.scss";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 interface NotFoundPageProps {}
 
@@ -12,6 +12,7 @@ const NotFoundPage: React.FC<NotFoundPageProps> = () => {
       <Link className={styles.button} to="/">
         Home Page
       </Link>
+      <ScrollRestoration />
     </div>
   );
 };

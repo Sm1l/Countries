@@ -6,6 +6,7 @@ import { GET_ALL_COUNTRIES_URL } from "../../api/api";
 import { CardContainer } from "../../components/CardContainer";
 import { Controls } from "../../components/Controls";
 import { TRegion } from "../../Types/types";
+import { ScrollRestoration } from "react-router-dom";
 
 interface HomePageProps {}
 
@@ -53,6 +54,7 @@ const HomePage: React.FC<HomePageProps> = () => {
     <>
       <Controls onSearch={handleSearch} />
       {allCountries.length > 0 && <CardContainer allCountries={allFilteredCountries} />}
+      <ScrollRestoration />
     </>
   );
 };
